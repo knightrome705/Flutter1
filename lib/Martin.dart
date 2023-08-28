@@ -22,7 +22,7 @@ class _Martin1State extends State<Martin1> {
               decoration: BoxDecoration(
                 color: Colors.green,
                 // shape: BoxShape.circle
-                    boxShadow: [BoxShadow(color: Colors.red,offset: Offset(10, 20),blurStyle: BlurStyle.inner)]
+                    boxShadow: [BoxShadow(color: Colors.red,offset: Offset(20, 20),blurStyle: BlurStyle.inner)]
               ),
             )
           ],
