@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 class Martin1 extends StatefulWidget {
   const Martin1({super.key});
 
@@ -13,21 +14,9 @@ class _Martin1State extends State<Martin1> {
       appBar: AppBar(
         backgroundColor: Colors.red,
       ),
-      body: Center(
-        child: Column(
-          children: [
-            Container(
-              height: 100,
-              width: 100,
-              decoration: BoxDecoration(
-                color: Colors.green,
-                // shape: BoxShape.circle
-                    boxShadow: [BoxShadow(color: Colors.red,offset: Offset(20, 20),blurStyle: BlurStyle.inner)]
-              ),
-            )
-          ],
-        ),
-      ),
+      body: Center(child: ElevatedButton(onPressed: ()async{
+        await Fluttertoast.showToast(msg:"Submitted");
+      },child: Text("submit"),)),
     );
   }
 }
